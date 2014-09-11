@@ -31,3 +31,7 @@ function incomingObject(obj) {
   // if (t.throttle()) return obj;
 }
 ````
+
+## More
+
+- Inn case you choose a negative window size all objects will be accepted

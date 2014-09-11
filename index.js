@@ -38,6 +38,7 @@ ThrottleSkip.prototype.throttle = function() {
  * @return {number} the probability with which an object will be taken at that point in time
  */
 ThrottleSkip.prototype.getProbability = function() {
+    if (this.maxItems<0) return 1;
     _clean(this.timestamps, this.windowSizeMs);
     var space = this.maxItems-this.timestamps.length;
     if (space<=0) return 0;

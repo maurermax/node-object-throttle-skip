@@ -25,6 +25,14 @@ describe('object-throttle-skip', function() {
     }
     expect(c).to.be.within(1, WINDOW_SIZE);
   });
+  it('for a negative window size all items will be accepted', function() {
+    var t2 = new Throttle(TIME_WINDOW, -1);
+    var c = 0;
+    for (var i=0;i<WINDOW_SIZE*2;i++) {
+      if (t2.throttle()) c++;
+    }
+    expect(c).to.be(WINDOW_SIZE*2);
+  });
   it('first probability will always be 1 afterwards probabilities will be less in case and object has been taken', function() {
     expect(t.getProbability()).to.be(1);
     var lastProb = 1;
