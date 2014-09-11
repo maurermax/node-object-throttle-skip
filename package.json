@@ -1,0 +1,27 @@
+{
+  "name": "object-throttle-skip",
+  "version": "0.0.1",
+  "description": "Node module to throttle an incoming stream of objects by letting some of them pass through, and throwing away others.",
+  "main": "index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha index.spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/maurermax/node-object-throttle-skip.git"
+  },
+  "keywords": [
+    "throttle objects",
+    "skip incoming objects"
+  ],
+  "author": "Max Maurer <maxemanuel.maurer@gmail.com> (http://max-maurer.de)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maurermax/node-object-throttle-skip/issues"
+  },
+  "homepage": "https://github.com/maurermax/node-object-throttle-skip",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^1.21.4"
+  }
+}
