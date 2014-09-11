@@ -1,6 +1,6 @@
 {
   "name": "object-throttle-skip",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Node module to throttle an incoming stream of objects by letting some of them pass through, and throwing away others.",
   "main": "index.js",
   "scripts": {

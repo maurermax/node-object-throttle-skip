@@ -5,6 +5,11 @@ Node module to throttle an incoming stream of objects by letting some of them pa
 
 Within a specific timeframe a maximum number of x objects will pass.
 
+## What's this for?
+If you want to get a rough idea of what this module is for, look as this fiddle.
+
+http://jsfiddle.net/5afahLdf/11/show
+
 ## Install
 ````
 npm install object-throttle-skip
