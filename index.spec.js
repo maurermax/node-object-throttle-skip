@@ -18,6 +18,24 @@ describe('object-throttle-skip', function() {
     expect(t.throttleObject).to.be.a('function');
     expect(t.throttleObject('a')).to.be('a');
   });
+  it('can get the current max items', function() {
+    expect(t.getMaxItems).to.be.a('function');
+    expect(t.getMaxItems()).to.be(WINDOW_SIZE);
+  });
+  it('can set the current max items', function() {
+    expect(t.setMaxItems).to.be.a('function');
+    t.setMaxItems(30);
+    expect(t.getMaxItems()).to.be(30);
+  });
+  it('can get the current window size', function() {
+    expect(t.getWindowSizeMs).to.be.a('function');
+    expect(t.getWindowSizeMs()).to.be(TIME_WINDOW);
+  });
+  it('can set the current window size', function() {
+    expect(t.setWindowSizeMs).to.be.a('function');
+    t.setWindowSizeMs(10000);
+    expect(t.getWindowSizeMs()).to.be(10000);
+  });
   it('for 60 calls of throttle it will return less than 30 time true', function() {
     var c = 0;
     for (var i=0;i<WINDOW_SIZE*2;i++) {
